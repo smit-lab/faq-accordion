@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./assets/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="prefetch stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>FAQ Accordion</title>
+  </head>
+  <body>
+    <main class="hero">
+      <picture>
+        <source
+          media="(min-width: 768px)"
+          srcset="./assets/illustration-woman-online-desktop.svg"
+        />
+        <img
+          src="./assets/illustration-woman-online-mobile.svg"
+          alt=""
+          class="hero-img"
+        />
+      </picture>
+      <img
+        src="./assets/illustration-box-desktop.svg"
+        alt="Box"
+        class="hero-box-img"
+      />
+      <div class="faq">
+        <h1 class="faq__heading">FAQ</h1>
+
+        <div class="faqs">
+          <div id="faq--header" class="faqs-header">
+            <h2 id="faq--question" class="faqs__question">
+              How many team members can I invite?
+            </h2>
+            <ion-icon id="arrow-icon" name="chevron-down-outline"></ion-icon>
+          </div>
+          <div id="faq--answer" class="answers">
+            <p class="faqs__answer">
+              You can invite up to 2 additional users on the Free plan. There is
+              no limit on team members for the Premium plan.
+            </p>
+          </div>
+        </div>
+
+        <div class="faqs">
+          <div id="faq--header" class="faqs-header">
+            <h2 id="faq--question" class="faqs__question">
+              What is the maximum file upload size?
+            </h2>
+            <ion-icon id="arrow-icon" name="chevron-down-outline"></ion-icon>
+          </div>
+          <div class="answers" id="faq--answer">
+            <p class="faqs__answer">
+              No more than 2GB. All files in your account must fit your allotted
+              storage space.
+            </p>
+          </div>
+        </div>
+        <div class="faqs">
+          <div id="faq--header" class="faqs-header">
+            <h2 id="faq--question" class="faqs__question">
+              How do I reset my password?
+            </h2>
+            <ion-icon
+              class="arrow-icon--down"
+              id="arrow-icon"
+              name="chevron-down-outline"
+            ></ion-icon>
+          </div>
+          <div class="answers" id="faq--answer">
+            <p class="faqs__answer">
+              Click “Forgot password” from the login page or “Change password”
+              from your profile page. A reset link will be emailed to you.
+            </p>
+          </div>
+        </div>
+        <div class="faqs">
+          <div id="faq--header" class="faqs-header">
+            <h2 id="faq--question" class="faqs__question">
+              Can I cancel my subscription?
+            </h2>
+            <ion-icon id="arrow-icon" name="chevron-down-outline"></ion-icon>
+          </div>
+          <div class="answers" id="faq--answer">
+            <p class="faqs__answer">
+              Yes! Send us a message and we’ll process your request no questions
+              asked.
+            </p>
+          </div>
+        </div>
+
+        <div class="faqs">
+          <div id="faq--header" class="faqs-header">
+            <h2 id="faq--question" class="faqs__question">
+              Do you provide additional support?
+            </h2>
+            <ion-icon
+              id="arrow-icon"
+              class="arrow-icon--down"
+              name="chevron-down-outline"
+            ></ion-icon>
+          </div>
+          <div class="answers" id="faq--answer">
+            <p class="faqs__answer">
+              Chat and email support is available 24/7. Phone lines are open
+              during normal business hours.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="/main.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

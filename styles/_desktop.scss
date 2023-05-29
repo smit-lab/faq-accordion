@@ -1,0 +1,46 @@
+@media (min-width: 768px) {
+  body {
+    position: relative;
+  }
+  .hero {
+    flex-direction: row;
+    width: rem(920);
+    margin: rem(100) auto;
+    justify-content: space-between;
+    height: rem(509);
+
+    &-img {
+      position: static;
+      width: rem(472);
+      height: rem(359);
+      transform: translateX(rem(-84));
+    }
+
+    &-box-img {
+      display: block;
+      position: absolute;
+      top: rem(216);
+      left: rem(-100);
+    }
+  }
+
+  picture {
+    overflow: hidden;
+  }
+
+  .faq {
+    width: rem(350);
+    padding: rem(65) 0;
+    margin-right: rem(65);
+  }
+
+  .faqs {
+    &__question {
+      font-size: rem(14);
+    }
+
+    &__answer {
+      padding-right: 0;
+    }
+  }
+}

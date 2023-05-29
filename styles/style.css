@@ -1,0 +1,162 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+h1, h2 {
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+body {
+  background: linear-gradient(180deg, #b068e9 0%, #6463e7 100%);
+  display: grid;
+  place-content: center;
+  font-weight: 400;
+}
+
+.hero {
+  width: 20.4375rem;
+  height: 34.375rem;
+  margin: 9.25rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 1.4375rem;
+  background-color: #fff;
+  position: relative;
+}
+.hero-img {
+  width: 14.8125rem;
+  height: 11.25rem;
+  position: absolute;
+  top: -6.75rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.hero-box-img {
+  display: none;
+}
+
+.faq {
+  padding: 8.25rem 1.5rem 3rem;
+  height: 100%;
+}
+.faq__heading {
+  text-align: center;
+  margin-bottom: 2.375rem;
+}
+
+.faqs {
+  padding-bottom: 1.125rem;
+  margin-bottom: 1.0625rem;
+  border-bottom: 1px solid #e7e7e9;
+}
+.faqs-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.faqs-header ion-icon {
+  color: #f47c57;
+}
+.faqs__question {
+  font-size: 0.8125rem;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #4a4b5e;
+  user-select: none;
+}
+.faqs__answer {
+  font-size: 0.75rem;
+  color: #787887;
+  padding-top: 0.8125rem;
+  user-select: none;
+  cursor: text;
+  padding-right: 1.875rem;
+}
+.faqs:nth-child(6) {
+  margin: 0;
+}
+
+.answers {
+  transition: max-height 300ms ease;
+  max-height: 0;
+  overflow: hidden;
+}
+
+.faq-open {
+  transition: max-height 500ms ease;
+  max-height: 6.25rem;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.arrow-icon--down, .arrow-icon--up {
+  transition: all 500ms ease;
+}
+
+.arrow-icon--up {
+  transform: rotate(180deg);
+  transform-origin: center;
+}
+
+@media (min-width: 768px) {
+  body {
+    position: relative;
+  }
+  .hero {
+    flex-direction: row;
+    width: 57.5rem;
+    margin: 6.25rem auto;
+    justify-content: space-between;
+    height: 31.8125rem;
+  }
+  .hero-img {
+    position: static;
+    width: 29.5rem;
+    height: 22.4375rem;
+    transform: translateX(-5.25rem);
+  }
+  .hero-box-img {
+    display: block;
+    position: absolute;
+    top: 13.5rem;
+    left: -6.25rem;
+  }
+  picture {
+    overflow: hidden;
+  }
+  .faq {
+    width: 21.875rem;
+    padding: 4.0625rem 0;
+    margin-right: 4.0625rem;
+  }
+  .faqs__question {
+    font-size: 0.875rem;
+  }
+  .faqs__answer {
+    padding-right: 0;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
