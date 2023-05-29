@@ -64,6 +64,9 @@ body {
     font-weight: 400;
     color: $Very-dark-grayish-blue;
     user-select: none;
+    &:hover {
+      color: $Soft-red;
+    }
   }
 
   &__answer {
